@@ -30,3 +30,22 @@ git config --global user.name "사용자 아이디"
     git config --global user.email "사용자 이메일 주소"
 
 12. git bash의 해당 프로젝트 디렉토리에서 git init
+
+13. 프로젝트 개발코드 입력하고 저장 
+    README.md 작성
+
+14. git Bash에서 관리목록으로 추가
+    git add 파일명 또는 git add .
+
+15. git의 상태보기(빨간색은 아직 add하지 않은 것,초록색은 add한 내용)
+    git status
+
+16. git commit -m "커밋할메시지(작업내용)"
+
+17. 원격 저장소 지정
+    git remote add origin 해당레포시토리주소
+
+18. 원격 저장소에 업로드
+    git oush -u origin master
+
+19. 해당ㅎ는 아이디나 이메일, 패스워드를 물어볼 경우 입력
