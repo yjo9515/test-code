@@ -48,4 +48,6 @@ git config --global user.name "사용자 아이디"
 18. 원격 저장소에 업로드
     git oush -u origin master
 
-19. 해당ㅎ는 아이디나 이메일, 패스워드를 물어볼 경우 입력
+19. 해당하는 아이디나 이메일, 패스워드를 물어볼 경우 입력
+
+https://github.com/kimkitae1004/test-code2
