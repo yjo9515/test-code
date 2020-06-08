@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서연습4-미디어 관련 요소</title>
+</head>
+<body>
+    <h2>이미지 요소</h2>
+    <img src="./blitz.jpg" alt="대체문자"
+    title="블리츠">
+    <img src="../blitz.jpg" alt="대체문자"> <!--현재 폴더 = ./ 상위폴더 ../-->
+    <hr>
+
+    <h2>사운드 요소</h2> 
+    <!--<audio src="./K-ON+fuwafuwa+time.mp3" autoplay controls loop></audio>
+    <!-->
+    <audio autoplay controls loop >
+        <source src="./K-ON+fuwafuwa+time.mp3" type="audio/mp3">
+        <source src="./K-ON+fuwafuwa+time.ogg" type="audio/ogg">
+        <source src="./K-ON+fuwafuwa+time.wav" type="audio/wav">    
+    </audio>    
+    <hr>
+
+    <h2>동영상 요소</h2>
+    <!--
+    <video src="./steinsgate.mp4" poster="./blitz.jpg" autoplay controls loop muted></video>
+    -->
+    <video autoplay controls loop>
+        <source src="./steinsgate.mp4" type="video/mp4">
+        <source src="./steinsgate.ogv" type="video/ogg">
+        <source src="./steinsgate.webm" type="video/webm">
+    </video>
+    <hr>
+    <h2>프레임 요소</h2>
+    <iframe width="1252" height="704" src="https://www.youtube.com/embed/grmi8lDop0w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="ex3.html" frameborder="0" width="800" height="600"></iframe>
+    <iframe src="./blitz.jpg" frameborder="0" width="400" height="300"></iframe>
+</body>
+</html>

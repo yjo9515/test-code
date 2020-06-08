@@ -1,0 +1,64 @@
+@charset "utf-8";
+/* 메인 스타일 */
+.content { clear: both; width: 696px; margin: 0 auto;}
+#event:checked ~ #la3 {display: block;}
+#event2:checked ~ #la4  { display: block;}
+#event3:checked ~ #la5 {display: block;}
+#la3 {display: none;}
+#la4 {display: none;}
+#la5 {display: none;}
+#la3, #la4, #la5 { margin: 0 auto; }
+#event { position: relative; left: 40px; top: 30px;  margin: auto; z-index: 999; cursor: pointer;}
+#event2 { position: relative; left: 50px; top: 30px;  margin: auto; z-index: 999; cursor: pointer;}
+#event3 { position: relative; left: 60px; top: 30px;  margin: auto; z-index: 999; cursor: pointer;}
+.tit1{ padding: 10px; text-align: center; font-size: 30px; margin: auto;}
+.best_txt { margin: 0 auto; position: relative; width: 1200px; height: 60px;
+display: block;
+}
+.best_txt ul { margin: 0 auto; border-top: 1px solid #e4eaed;}
+.best_txt ul li{ float: left; padding: 30px; padding-top: 0px; margin-left: 123px; }
+.best_txt ul li a { font-size: 16px; color: #333;}
+.best_txt ul li:hover { border-top: 2px solid #ef402e; overflow: hidden;}
+#se { margin-left: -10px;}
+.best_img a { width: 360px; height: 300px;}
+.best_img a :hover { border: 2px solid #ef402e;}
+.brand_wrap  { width: 1348px; display: block; margin: auto; }
+.brand_wrap ul li a img {position: relative;
+    display: block;
+    margin-left: -683px;
+    left: 50%;
+    width: 100%;
+}
+.br { width: 800px; height: 40px; margin: auto; text-align: center; display: block;}
+.new_wrap {border-top: 1px solid #000;
+    border-bottom: 1px solid #cad3d8;
+
+margin: 0 auto;
+width: 1200px; height: 360px;
+}
+.new_img:hover{border: 2px solid #ef402e;}
+.new_wrap_de a img:hover{ transform:scale(0.7,0.7); transition: transform .5s;
+-webkit-transform: scale(0.7,0.7);
+-moz-transform: scale(0.7,0.7);
+-o-transform: scale(0.7,0.7);
+-ms-transform: scale(0.7,0.7);
+}
+
+.new_img {width: 290px; height: 358px; margin: auto; float: left;}
+.pro_li { float: left; height: 280px;
+    width: 300px;}
+.new_wrap_de { position: relative;
+    border-bottom: 1px solid #e4eaed;
+    height: 100%;
+    width: 290px;}
+.new_wrap_de a{position: relative;
+    height: 100%;
+    width: 290px }
+.new_wrap_de a img { position: relative ;
+    height: 290px;
+    width: 290px}
+.new_txt {width: 300px; height: 80px; }
+.new_txt ul { height: 80px;}
+.new_txt ul li { display: block; text-align: center; margin-top: 15px;}
+.new_txt ul li a {     font-size: 16px;
+    color: #333;}

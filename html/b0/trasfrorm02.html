@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {border:1px solid firebrick;}
+        .box {clear:both; width: 30px; height: 100px;color: deepskyblue;}
+        /* perspective(배율 및 거리) : 원금감을 표현함 */
+        /* transform-style : 전체 3형태를 유지할 것인지 유무 설정 */
+        /* backface-visibility : 입체면에서 뒷면을 보이게 할 것인지 유무 설정 */
+        .box li { position: absolute; width: 200px; height: 200px;
+        text-align: center; color: fuchsia; line-height: 90px; opacity: 0.7;}
+        .side1 {background: firebrick; transform:rotateY(0deg) translate3d( 0,0,80px); }
+        .side2 {background: gold; transform:rotateY(90deg) translate3d(0,0,80px) ;}
+        .side3 {background: green; transform:rotateY(180deg) translate3d(0,0,80px);}
+
+        #box_01 { animation: name duration timing-function delay iteration-count direction fill-mode;}
+        #box_02 { }
+        
+
+        애니메이션을 적용할 요소에 지정하는 animation 속성
+        animation-name:애니메이션을 적용할 요소의 선택자에 애니메이션이름을 적용
+        animation-duration:애니메이션 시간으로 애니메이션을 적용할 요소에 적용
+        animation-iteration-count:애니메이션 실행 횟수
+        animation-fill-mode:정해진 애니메이션 시간이 종료된 후에 결과화면 표시하는 방법
+            both(종료화면 그대로 정지), forward(처음 진행상태로 표시), 
+            backward(원래 상태로 복귀되어 표시), none(원래 기본값으로 들어감)
+        animation-timing-funtion:가속감속 시간제어 함수를 적용
+            linear(등속도), ease(약가속), easein(가속), ease-out(감속),
+            ease-in-out(가속 후 감속), cubic-bezier(복수변화량값)
+        animation-delay:지연시간
+        animation-direction:애니메이션 진행 방향
+            normal(순방향애니메이션 0%->100%), reverse(역방향 애니메이션 100%->0%),
+            alternate(정방향역방향애니메이션 0%->100%->0%)
+            alternate-reverse(역방향정방향애니메이션 100%->0%->100%)
+        
+        
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="box" id="box_01">
+            <li class="side1">면01</li>
+            <li class="side2">면02</li>
+            <li class="side3">면03</li>
+            <li class="side4">면04</li>
+            <li class="side5">면05</li>
+            <li class="side6">면06</li>
+        </ul>
+        <ul class="box" id="box_02">
+            <li class="side1">면1</li>
+            <li class="side2">면2</li>
+            <li class="side3">면3</li>
+            <li class="side4">면4</li>
+            <li class="side5">면5</li>
+            <li class="side6">면6</li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서작성8-css선택자</title>
+</head>
+<body>
+    <h2>CSS 선택자</h2>
+    <p>구조 : HTML, 시각적표현 : CSS, 행위(인터렉션) : javascript 
+    기능구현 : jsp</p>
+    <h3>스타일의 정의 : Cascading Style Sheet(정해져있는 스타일의 형식)    
+    </h3>
+    <h3>스타일의 문법 : selecter { properties1:value (스타일의속성:스타일의값)
+        ;...properties N : value N}</h3>
+    <h3>스타일의 선택자 종류</h3>
+    <h4>전체 선택자 : * (html문서의 모든 태그를 선택)</h4>
+    <h4>태그 선택자 : tagName (특정 태그를 가진 요소를 선택)</h4>
+    <h4>클래스 선택자 : .classname (특정 클래스명을 가진 요소를 선택)</h4>
+    <p>같은 서식을 갖는 것을 한 번에 선택하여 스타일을 지정하기 위해서 
+        클래스라는 것을 선택하기 때문에 단수보다는 복수형이라고 생각하면 됨
+    </p>
+    
+    <h4>아이디 선택자 : #idName (특정 아이디명을 가진 요소를 선택)</h4>
+    <p>하나의 html문서 상에서 오직 하나만 선택을 하기 위해 
+        필요한 요소로서 홈페이지 아이디처럼 
+        오로지 문서에서 한번만 부여해야 함</p>
+    <h4>복합 선택자 : tag.className, tag2.className2 
+        (태그나 아이디나 클래스를 혼합해서 사용하거나 
+        쉼표를 사용해서 한번에 여러 선택을 하는경우)</h4>
+    <p>ex) h2.tit, .pro_tit, #kbs { 스타일내용 } 
+        (3가지 모두 같은 스타일 적용)</p>
+    <h4>자식 선택자 : 부모요소 > 자식요소 
+        (특정요소의 자식요소만 선택하려고 할 경우)</h4>
+    <p>ex) ul > li</p>    
+    <h4>후손 선택자 : 조상요소 후손요소 (칸을 띄운다)
+        (특정요소의 내부요소를 선택하려고 할 경우-자식요소도 포함)</h4>
+    <p>ex) nav.gnb li</p>
+    <h4>형제요소 선택자 : 형요소 ~ 동생들요소 (특정 요소의 아래에 나오는
+        요소)</h4>
+    <p>ex) .1st ~ .ico</p>
+    <h4>순서위치 선택자 : 요소:first-child, 요소:last-child,
+        요소:only-child, 요소:nth-child(n) (현재 자식요소가 특정 위치에 
+        있을때)
+    </h4>
+    <p>ex1) li:first-child</p>
+    <p>ex2) li:last-child</p>
+    <p>ex3) li:only-child</p>
+    <p>ex4) li:nth-child(3)</p>
+    <p>ex5) li:nth-child(2n+1)</p>
+    <p>ex6) li:nth-child(2n)
+    <h4>요소별 위치선택자 : 요소:first-of-type, 요소:last-of-type,
+        요소:only-of-type, 요소:nth-of-type(n)
+    </h4>
+    <p>ex1) li:first-of-type</p>
+    <p>ex2) li:last-of-type</p>
+    <p>ex3) li:only-of-type</p>
+    <p>ex4) li:nth-of-type(3)</p>
+    <p>ex5) li:nth-of-type(2n+1)</p>
+    <p>ex6) li:nth-of-type(2n)
+    <p>ex7) li:nth-of-type(odd)홀수</p>
+    <p>ex8) li:nth-of-type(even)짝수</p>
+
+    <h4>속성 선택자 : 요소명[속성명=값] (특정 요소가 가진 속성의 값으로
+        선택하려고 할 경우)</h4>
+    <p>ex1) a[target]</p>
+    <p>ex2) input[type=radio] </p>
+    <p>ex3) img[src^=ab]</p>
+    <p>ex4) img[src$=jpg]</p>
+    <p>ex5) img[src*=ko]</p>
+
+    <h4>링크 선택자 : 요소명:링크내용 (주로 마우스의 반응이나 열어본
+        내용일 경우 사용)</h4>
+    <p>a:link - a요소에 href속성이 있는 경우 선택</p>
+    <p>a:visited - a요소의 href의 값이 방문한 페이지인 경우</p>
+    <p>.btn:hover - .btn인 요소에 마우스 포인터가 올려져 있는 경우 선택</p>
+    <p>.btn:active - .btn인 요소에 마우스 포인터를 올리고 누르고 있는 경우
+    선택</p>
+
+    <h4>상태 선택자 : 요소명:상태내용 (주로 폼 컨트롤 요소에 사용)</h4>
+    <p>input:checked - input요소가 체크된 상태가 있는 요소만 선택</p>
+    <p>input:focus - input요소에 커서가 위치된 요소만 선택</p>
+    <p>input:disabled - input 요소중에 비활성화된 요소만 선택</p>
+    <p>input:enabled - input 요소중에 활성화된 요소만 선택</p>
+
+    <h4>가상 요소 선택자(특정 불가) : 요소명::before, 요소명::after, 
+        요소명::first-line, 요소명::first-letter </h4>
+    <p>.nav::before - .nav 요소의 맨 앞쪽을 선택</p>
+    <p>.nav::after - .nav 요소의 맨 뒤쪽을 선택</p>
+    <p>.par::first-letter - .par 요소의 첫 글자만 선택 </p>
+    <p>.par::first-line - .par 요소의 첫 줄만 선택</p>
+    <p>.par::selection - .par 요소를 마우스로 범위지정한 만큼 선택</p>
+    <p>#par::target - #par 요소가 a요소로 들어온 요소라면</p>
+    <nav class="par">
+        <p class="par">오늘은 신나는 목요일
+        
+        </p>
+    </nav>
+    <a href="#par">문단으로 이동</a>
+    <div id="par">여기는 id가 par인 곳</div>
+
+
+
+
+
+
+
+    
+
+
+
+    
+</body>
+</html>

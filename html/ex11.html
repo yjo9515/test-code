@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서연습11-CSS2 중요 속성</title>
+    <style>
+    .tit2 { color: deeppink;}
+    </style>
+</head>
+<body>
+    <h3 class="tit2">박스 관련 속성</h3>
+    <p>박스 관련 속성은 block이나 inline-block요소에만 사용가능함</p>
+    <p>인라인 요소 : a, span, input, select, button, textarea,
+        label, em, strong, ins, del, sup, sub, b, i, u 등은
+        좌우에 대한 마진과 패딩은 적용
+    </p>
+    <p>크기 지정이 가능한 인라인 요소 : img, video, iframe</p>
+    <p>블록 요소 : div, header, main, footer, nav, aside,
+        figure, section, article, address, ul, ol, li, dl, dt, dd, h1~h6, p, ...
+    </p>
+    <p>테이블 관련 요소 : table, thead, tbody, tfoot, caption, tr, th, td,
+        cols, rows,...
+    </p>
+    <h4>width:너비(auto, px단위, %단위, vw 등 기타크기단위)</h4>
+    <h4>height:높이(auto, px단위, %단위, vh 등 기타크기단위)</h4>
+    <h4>margin:바깥여백(auto 오른쪽여백 아래쪽여백 왼쪽여백)</h4>
+    <p>margin:윗여백 오른쪽여백 아래쪽 여백 왼쪽여백
+        -> margin:10px 5px 10px 20px;</p>
+    <p>margin:상하좌우여백 -> margin:10%; </p>
+    <h4>margin-left, margin-right, margin-top, margin-bottom 
+        : 각각의 상하좌우여백을 별도로 규정
+    </h4>
+    <hr>
+    <h4>padding:안쪽여백(px단위숫자, %단위숫자)</h4>
+    <p>padding:윗여백 오른쪽여백 아래쪽여백 왼쪽여백 ->
+        padding:2px 5px 10px 8px
+    </p>
+    <p>padding:위아래여백 왼쪽오른쪽여백 ->
+        padding:5px 20px;
+    </p>
+    <h4>box-sizing:크기지정방식[크기에 맞춤]
+        (content-box, border-box, padding-box)  </h4>
+    <p>border-box를 지정할 경우 지정한 크기 안쪽으로 
+        지정한 패딩과 테두리 영역에 포함됨</p>
+    <hr>
+    <h3 class="tit2">가시 속성</h3>
+    <h4>display:출력(표시)속성 (none, block, inline, inline-block, table)</h4>
+    <h4>visibility:가시 속성 (visible, hidden, collapse)</h4>
+    <h4>opacity:불투명도(0~1)</h4>
+    <h4>overflow:흘러넘침(auto, scroll, hidden, visible)</h4>
+    <h4>box-shadow:박스의 그림자(가로그림자크기 세로그림자크기 블러량 그림자색</h4>
+<!--positon
+            static      margin
+                        padding
+                        float
+                        clear
+            (정적)
+            relative
+            (상대)
+
+
+
+            absolute    left
+                        right
+                        top
+                        bottom
+            (절대)-->
+
+</body>
+</html>

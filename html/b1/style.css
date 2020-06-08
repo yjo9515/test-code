@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,address,big,cite,code,del,dfn,em,img,ins,q,s,samp,small,strike,strong,sub,sup,tt,var,
+b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,button,figure 
+{font-family:'NS','맑은 고딕','돋움','​dotum',sans-serif; font-smoothing:antialiased; border:0 none; font-size:14px; letter-spacing:-1px; margin:0; padding:0;}
+ .wrap {
+    overflow:hidden; position: relative; min-width:1200px;}
+
+    
+
+.hd {
+    width: 100%;
+    clear: both;
+}
+ .tnb {     
+           float: right; padding-top: 4px;
+        }
+ .tnb ul { }
+ .tnb ul li {float: right; right: 30px;}
+ .tnb ul li a {
+      float: left;
+      display: block;
+      height: 30px; line-height: 30px;}
+ .gnb {clear: both;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+}
+ .gnb ul li {
+     float: left;
+ }
+ .gnb li a {
+     display: block;
+     text-align: center;
+     
+ }
+ .gnb li:hover{
+     color: #CB4335 ;
+ }
+ 
+

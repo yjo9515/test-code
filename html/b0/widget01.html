@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding: 0; margin: 0;}
+        li,ul,a { list-style: none;}
+        #menu { width: 800px; height: 50px; position: relative; margin: 0 auto;}
+        #menu .mn { float: left; position: relative; width: 100px; height: 30px;}
+        .mn a {display: block; color: darkviolet; background-color: deepskyblue;
+        border-bottom: 1px solid firebrick; 
+        border-top: 1px solid firebrick;
+        font-weight: 10px;
+        }
+        .mn:hover a { background-color: gold; color: honeydew;}
+        .sub { display: none; }
+        #menu .mn:hover .sub  { display: block;}
+        .sub li a:hover { color: honeydew; background-color: gold;}
+        .con {width: 300px; height: 200px; position: relative;  }
+        /* display 속성은 transition이 적용안댐 (height를 설정해서 적용) */
+        
+    </style>
+</head>
+<body>
+    <div class="page">
+        <nav id="menu">
+            <ul>
+                <li class="mn">
+                    <a href=""> 메인메뉴1</a>
+                    <ul class="sub">
+                        <li><a href="" >서브메뉴01</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴02</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴03</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴04</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴05</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+                <li class="mn">
+                    
+                    <a href="">메인메뉴2</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴02</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴03</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴04</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴05</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+                <li class="mn">
+                   
+                    <a href=""> 메인메뉴3</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴02</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴03</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴04</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴05</a></li>
+                    </ul>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page" id="page2">
+        <nav id="gnb2">
+            <ul class="mainmenu">
+                <li>
+                    <a href="">대메뉴1</a>
+                    <ul class="submenu">
+                        <dl class="cate">
+                            <dt class="cate_tit">그룹제목</dt>
+                            <dd><a href="">소메뉴1</a></dd>
+                            <dd><a href="">소메뉴2</a></dd>
+                            <dd><a href="">소메뉴3</a></dd>
+                            <dd><a href="">소메뉴4</a></dd>
+                            <dd><a href="">소메뉴5</a></dd>
+                        </dl>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+</body>
+</html>

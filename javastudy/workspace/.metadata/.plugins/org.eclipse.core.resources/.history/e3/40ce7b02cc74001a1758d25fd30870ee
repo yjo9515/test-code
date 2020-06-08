@@ -1,0 +1,25 @@
+public class DataType_ex
+{
+	public static void main(String args [])
+	{
+		System.out.println("2.실수형");
+		//실수형 : float형, double형
+		//float: 소수점이하 7자리까지 표현가능
+		//double: 소수점이하 15~16자리까지 표현가능
+		//자바에서는 실수는 무조건 double 형으로 인식한다.
+		
+		float ft = 2.456F;//값을 double형으로인식하기때문에 F,f를 접미사로 사용
+		
+		System.out.println("ft = "+ft);
+		float ft2 = 333;
+		System.out.println("ft2 = "+ft2);
+		
+		// byte<short<int<long<float<double<char
+		
+		double db = 12.1111;
+		System.out.println("db = "+db);
+		
+		double db2 = 0.2333E3; // 0.2333*10^3
+		System.out.println("db2 = "+db2);
+	}
+}

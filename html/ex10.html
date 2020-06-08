@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서연습10-css 속성</title>
+    <style>
+    .tit1 { font-size: 40px;} 
+    </style>
+    <link rel="stylesheet" href="common.css">
+</head>
+<body>
+    <h2 class="tit1">Css 속성</h2>
+    <p>선택자 { 속성명:값; }</p>
+    <hr>
+    <h3 class="tit2">CSS 참조 방식</h3>
+    <p> 내부스타일 방식 : 해당 문서에 style요소로 스타일을 지정 </p>
+    <p> 외부스타일 방식 : link 요소로 별도의 .css파일을
+        연결하여 지정하는 방식 (가급적이면 외부스타일로)</p>
+    <p> 인라인스타일 방식 : 스타일을 지정하는 요소에 직접 스타일을 입력</p>
+    <h3 style="font-size: 32px; color: red;">css 속성의 단위</h3>
+    <p>색상단위 : 키워드, 16진코드(#f00, #ff0000), rgb(0~255,0~255,0~255)
+        , hsl(색_각도,채도_백분율, 명도_백분율), rgba(0~255,0~255,0~255,0~1)
+        , hsla(색_각도,채도_백분율, 명도_백분율, 0~1 투명도)
+    </p>
+    <p>크기단위 : px, pt, %, em, vh, vw</p>
+    <p>각도단위 : deg</p>
+    <p>시간/속도 단위 : s, ms, h, m</p>
+    <p>url 단위 : url("파일 이름 및 경로")</p>
+    <hr>
+    <h3 class="tit2">폰트이름 관련속성</h3>
+    <h4>font-family:영문 폰트명,"한글폰트명1",
+        '한글폰트명', "영문폰트명", 웹기본폰트명</h4>
+    <p>웹 기본 폰트 
+    font-family:serif,sans-serif,cursive,fantasy,monospace</p>
+    <h4>font-size:글자크기(pt,px,%,em,vh,vw...단위, 
+        키워드(big,small))</h4>
+    <h4>font-style:normal(보통), italic, oblique(기울임꼴)</h4>
+    <h4>font-style:장평(normal,ultra-condensed,extra-condensed,
+        condensed,semi-condence,semi-expanded,expanded,
+        extra-expanded,ultra-expanded
+    </h4>
+    <h4>font-weight:글꼴두께(normal,bold,bolder,lighter,숫자(100~900,
+        100단위씩, 숫자가 클수록 글자가 두꺼움))</h4>
+    <h4>font-variant:글자변형(normal, small-caps)</h4>
+    <h4>font-kerning:폰트간격(normal, px단위 숫자)</h4>
+    <hr>
+    <h3 class="tit2">글자 관련</h3>
+    <h4>color:글자색(키워드, 16진코드, rgb, hsl)</h4>
+    <h4>direction:글자진행방향(ltr=left to right, rtl=right to left)</h4>
+    <h4>letter-spaceing:자간(normal, px단위 숫자)</h4>
+    <h4>line-height:행높이(normal, 숫자_em, px단위 숫자)</h4>
+    <p>line-height:1.6</p>
+    <h4>text-align:글자 정렬(left, right, center, justify)</h4>
+    <h4>text-decoration:글자 장식(none, overline, underline, 
+        line-through)</h4>
+    <h4>text-indent:들여쓰기(normal, px단위숫자, -음수px단위숫자)</h4>
+    <h4>text-transform:대소문자변환(none, uppercase, lowercase, 
+        capitalize)</h4>
+    <h4>text-overflow:글자가 영역의 크기보다 많을 경우의 끝처리 방식
+        (clip, ellipsis, 특정텍스트)
+    </h4>
+    <h4>white-space:글자가 한 줄을 벗어난 경우 벗어난 글자를 어떻게
+        표시할지의 방식(normal, nowrap, pre, pre-line, pre-wrap)
+    </h4>
+    <h4>word-spacing:단어별 간격(normal, px단위숫자)</h4>
+    <h4>word-wrap:단어보호(normal, break-word)</h4>
+    <h4>text-shadow:글자의 그림자(수평그림자양 수직그림자양 블러양
+        그림자색)</h4>
+    <p>text-shadow:5px 5px 10px black</p>
+    <hr>
+    <h3 class="tit3">배경 관련 속성</h3>
+    <h4>background:배경통합속성(배경색 배경이미지 위치/크기 배경반복
+        배경위치지정방식 배경채움정도 배경과화면의고정방식)</h4>
+    <p>ex)background:skyblue url("cafe.png") no-repeat fixed center</p>
+    <h4>background-color:배경색(none, transparent[투명], 16진rgb코드,
+        색상명, rgb, rgba, hsl, hsla)</h4>
+    <h4>background-image:배경이미지(none, url단위파일경로와 이름)</h4>
+    <h4>background-position:배경위치(가로위치,세로위치)</h4>
+    <p>가로위치 : px단위 또는 %단위의 위치, left, right, center</p>
+    <p>세로위치 : px단위 또는 %단위의 위치, top, bottom, center</p>
+    <h4>background-repeat:배경반복속성(no-repeat, repeat,
+        repeat-x, repeat-y)
+    </h4>
+    <h4>background-clip:배경채움방식 또는 정도(border-box, padding-box
+        content-box)</h4>
+    <h4>background-origin:배경위치지정방식-이미지의시작위치
+        (border-box, padding-box, content-box)
+    </h4>
+    <h4>background-attachment:배경과 화면의 고정방식
+        (scroll, fixed, local)
+    </h4>
+    <h4>background-size:배경이미지크기(px단위숫자, auto,
+        cover, contain)
+    </h4>
+    <hr>
+    <h3 class="tit2">테두리 관련 속성</h3>
+    <h4>border:테두리통합속성(두께 선모양 선색)</h4>
+    <p>ex)border:3px solid #f00;</p>
+    <hr>
+    <h4>세부속성</h4>
+    <h4>border-width:테두리두께(px단위숫자 또는 pt단위숫자)</h4>
+    <h4>border-style:테두리선모양(solid, none, hidden, dotted,
+        dashed, double, groove, ridge, inset, outset)
+    </h4>
+    <h4>border-color:테두리색(색상명, 16진코드, rgb, hsl, rgba,
+        hsla단위)
+    </h4>
+    <h4>border-top:위쪽테두리(두께 선모양 선색)</h4>
+    <h4>border-right:오른쪽테두리(두께 선모양 선색)</h4>
+    <h4>border-bottom:아래쪽테두리(두께 선모양 선색)</h4>
+    <h4>border-left:왼쪽테두리(두께 선모양 선색)</h4>
+    <h4>border-image:테두리이미지지정(none, url단위파일경로와이름)</h4>
+    <h4>border-radius:둥근테두리 반지름지정(px단위숫자, %단위숫자</h4>
+    <p>ex)border-radius:10px 20px 30px 40px</p>
+    <hr>
+    <h4>세세속성</h4>
+    <h4>border-위치-두께:상/하/좌/우의 선두께를 각각 지정</h4>
+    <p>ex)border-top-width:5px;</p>
+    <h4>border-위치-선모양:상/하/좌/우의 선모양을 각각 지정</h4>
+    <p>ex)border-bottom-style:dashed;</p>
+    <h4>border-위치-색상:상/하/좌/우의 선색을 각각 지정</h4>
+    <p>ex)border-left-color:deeppink;</p>
+    <h4>border-모서리방향-radius:네 모서리의 반지름을 각각 지정</h4>
+    <p>border-top-left-radius:20px; <br>
+    border-bottom-right-radius:30px;
+    </p>
+    <h4>outline:테두리외각통합속성(두께 선모양 선색)</h4>
+
+
+</body>
+</html>

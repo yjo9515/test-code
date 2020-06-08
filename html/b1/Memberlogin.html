@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.thesaemcosmetic.com/assets/images/common/favicon_icon.ico">
+    <link rel="stylesheet" href="common.css">
+    <title>로그인  | THESAEM</title>
+    <style>
+      
+      
+
+
+     
+    </style>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- <script src="common.js"></script> -->
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_top">
+                <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="right">
+                        <li><a href="./Memberlogin.html">로그인</a></li>
+                        <li><a href="./newmember.html">회원가입</a></li>
+                        <li><a href="cart.html">장바구니</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+            <div class="hd_bottom_wrap">
+                <nav class="gnb">
+                    <a href="index.html" class="logo">
+                        <img src="https://www.thesaemcosmetic.com/assets/images/common/logo.png" alt="logo">
+                    </a>
+                    <input type="text" id="search_de" 
+                    name="search_de" placeholder="검색어 입력">
+                    <a href="search.html" id="search">
+                        <i class="xi-search"></i> 
+                    </a>
+                    <div class="menu_wrap">
+                    <ul class="menu">     
+                        <input type="checkbox" name="tabs" id="tab1" >
+                        <label for="tab1" id="la" class="menu_fl">Product</label>               
+                        <li class="menu_fl"><a href="event.html">Event</a></li>
+                        <li class="menu_fl"><a href="community.html">Community</a></li>
+                        <div id="menu_click">
+
+                            <input type="radio" name="tabs2" id="skin_tab" checked>
+            
+                            <label for="skin_tab" id="la2" class="menu_fl">Skin</label>
+                            <div id="skin_de">
+                                <ul class="skin_de_wrap">
+                                    <li><a href="product_de.html">스킨케어</a></li>
+                                    <li><a href="product_de.html">베이스 메이크업</a></li>
+                                    <li><a href="product_de.html">포인트 메이크업</a></li>
+                                    <li><a href="product_de.html">클렌징</a></li>
+                                    <li><a href="product_de.html">팩&마스크</a></li>
+                                    <li><a href="product_de.html">선케어</a></li>
+                                </ul>
+                            </div>
+                            <input type="radio" name="tabs2" id="other_tab">
+                            <label for="other_tab" id="la_3" class="menu_fl" class="menu_fl">Other</label>
+                            <div id="other_de">
+                                <ul class="other_de_wrap">
+                                    <li><a href="product_de.html">바디</a></li>
+                                    <li><a href="product_de.html">헤어</a></li>
+                                    <li><a href="product_de.html">미용소품</a></li>
+                                    <li><a href="product_de.html">MEN</a></li>
+                                    <li><a href="product_de.html">향수</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+
+
+                    </ul>
+                   
+                   
+                    </div>
+                </nav>
+
+            </div>
+           
+
+
+
+        </header>
+        <section class="content">
+            <div class="login_wrap">
+            <div class="back">
+<img src="https://www.thesaemcosmetic.com/assets/images/membership/bg_login_01.jpg" alt="">
+<div class="tit">
+    <h1>로그인</h1>
+    <p>Membership</p>
+</div>
+            </div>
+            <div class="login">
+                <div class="login_tab">
+                    <ul>
+                    <input type="radio" name="login" id="lo1" checked>
+                    <input type="radio" name="login" id="lo2">
+                    <label for="lo1" id="lla1" class="log_tab">회원 로그인</label>
+                    <label for="lo2" id="lla2" class="log_tab" >비회원 (주문조회)</label>
+               
+                    <div id="memchecked">
+                        <dl>
+                            <dt>아이디</dt>
+                            <dd><input type="text" name="if" title="아이디 입력" ></dd>
+                        </dl>
+                        <dl>
+                            <dt>비밀번호</dt>
+                            <dd><input type="password" name="if" title="비밀번호 입력" ></dd>
+                        </dl>   
+                        <div class="id_che">
+                            <label for="save_id" class="che3">
+                                <input type="checkbox" name="che" id="save_id">
+                                <span class="id_che2">아이디 저장</span>
+                            </label>
+                        </div>
+                        <div class="log_btn">
+                            <button type="submit">로그인</button>
+                        </div>
+                        <div class="bottom">
+                            <div class="new_line">
+                                <p>아직 더샘 회원이 아니신가요?</p>
+                                <a href="Newmember.html">회원가입하기</a>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="new_line">
+                                <p>아이디,비밀번호를 잊으셨나요?</p>
+                                <a href="se_id.html">아이디/비밀번호 찾기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="memchecked2">
+                        <dl>
+                            <dt>주문자 명</dt>
+                            <dd><input type="text" name="if" id="txt_box" title="주문자 명 입력" ></dd>
+                        </dl>
+                        <dl>
+                            <dt>휴대폰 번호</dt>
+                            <dd><div>
+                                <span>
+                                    <select title="국번 선택" class="nu_li" id="mo1">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                        <option value="016">016</option>
+                                        <option value="017">017</option>
+                                        <option value="018">018</option>
+                                        <option value="019">019</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <input type="text" id="mo2" class="nu_li">
+                                </span>
+                                <span><input type="text" id="mo3" class="nu_li"></span>
+                            </div></dd>
+                        </dl>   
+                        <div class="log_btn">
+                            <button type="submit">주문조회</button>
+                        </div>
+                        <div class="bottom">
+                            <div class="new_line">
+                                <p>아직 더샘 회원이 아니신가요?</p>
+                                <a href="Newmember.html">회원가입하기</a>
+                            </div>
+                         
+                        </div>
+
+
+                    </div>
+                 </ul>
+
+
+                </div>
+
+
+            </div>
+
+
+      
+        </div>
+
+
+
+
+        </section>
+        <footer class="ft">
+            <div class="not">
+                <div class="not_con">
+                    <p>NOTICE</p>
+                    <ul>
+                        <li><a href="center.html">로그인 오류 시 해결 안내 드립니다.</a>
+                            </li>
+                        <li><a href="center.html">본인확인/실명확인 서비스 일시 중단 안내(5/7)</a>
+                            </li>
+                        <li><a href="center.html">화장품 성분 표시 일부 변경 안내 (향료 알레르기 성분 표시법 개정)</a>
+                            </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+            <div class="ft_top_wrap">
+                <div class="company">
+                    <div class="center_info">
+                        <dl>
+                            <dt>더샘 제품 고객상담</dt>
+                            <dd class="wdo">080-080-7500</dd>
+                        </dl>
+                        <dl>
+                            <dt>온라인 고객상담</dt>
+                            <dd class="wdt">070-8250-2626</dd>
+                        </dl>
+                        <dl>
+                            <dt>평일</dt>
+                            <dd>10:00~17:00</dd>
+                        </dl>
+                        <dl>
+                            <dt>점심시간</dt>
+                            <dd>12:30~13:30</dd>
+                        </dl>
+
+
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>㈜더샘인터내셔널 대표 :</dt>
+                            <dd>이용준, 김중천</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 등록 번호 :</dt>
+                            <dd>102-81-33223</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표번호 :</dt>
+                            <dd>02-3218-7500</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>팩스번호 :</dt>
+                            <dd>02-3218-7590</dd>
+                        </dl>
+                        <dl>
+                            <dt>통신판매신고번호 :</dt>
+                            <dd>제2011-서울종로-1004호 [사업자정보확인]</dd>
+                        </dl>
+                        <dl>
+                            <dt>개인정보관리책임자 :</dt>
+                            <dd>경영지원이사 구경서</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>협력 운영사명 :</dt>
+                            <dd>주식회사 내추럴홈</dd>
+                        </dl>
+                        <dl>
+                            <dt>대표 :</dt>
+                            <dd>황건상, 이영건</dd>
+                        </dl>
+                        <dl>
+                            <dt>사업자 등록 번호 :</dt>
+                            <dd>120-88-13597</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 송파구 법원로 128 1607호</dd>
+                        </dl>
+                    </div>
+                    <div class="detail_info">
+                        <dl>
+                            <dt>대표번호 :</dt>
+                            <dd>070-4018-2260</dd>
+                        </dl>
+                        <dl>
+                            <dt>팩스번호 :</dt>
+                            <dd>070-8233-0720</dd>
+                        </dl>
+                        <dl>
+                            <dt>주소 :</dt>
+                            <dd>서울시 종로구 청계천로 35 관정빌딩 10층</dd>
+                        </dl>
+                    </div>
+                    <div class="social_menu">
+                        <nav class="social_menu_list">
+                        <ul>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_fb.png" alt=""></a></li>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_twt.png" alt=""></a></li>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_youtu.png" alt=""></a></li>
+                            <li><a href=""><img src="https://www.thesaemcosmetic.com/assets/images/common/btn_footer_insta.png" alt=""></a></li>
+                        </ul>
+                        </nav>
+                    </div>       
+                     
+                    
+           
+
+                </div>
+            
+           </div>   
+          
+            <div class="ft_bottom_wrap">
+            <nav class="ft_menu_wrap">
+                
+                <ul class="ft_menu">
+                    <li><a href="center.html">고객센터</a></li>
+                    <li><a href="terms.html">약관</a></li>
+                    <li><a href="info.html">개인정보</a></li>
+                    <li><a href="use.html">이용안내</a></li>
+                </ul>
+             
+               
+            </nav>
+            <p class="copy">COPYRIGHT BY THE SAEM INTERNATIONAL CO.LTD ALL RIGHTS RESERVED.</p>
+
+            </div>
+
+        </footer>
+    </div>
+
+
+    
+    
+</body>
+</html> 
