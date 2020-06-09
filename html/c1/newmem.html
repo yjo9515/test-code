@@ -28,6 +28,8 @@
     <!-- 최적화 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
     <link rel="stylesheet" href=".\c1\xeicon\xeicon.css">
+    
+        
 
     <style>
     * { margin: 0; padding: 0; }
@@ -485,6 +487,21 @@ transition-timing-function:easeout; }
     .ftr{ margin-top: 100px; background-color: gray;}
     .ftr_wrap{ margin: 0 auto; text-align: center; height: 100px;
     padding-top: 30px;}
+    /* 회원가입 스타일 */
+    .wrap { margin: auto; width: 900px; height: 400px;
+    position: relative;
+    top: 50px;
+    border: 1px solid #333333;
+    text-align: center;
+    }
+    .wrap h4 { position: relative; right: 400px; height: 50px;
+    top: 50px;
+    
+    }
+    .wrap img { position: relative; top: 80px; left: 60px;}
+    .new { position: relative; top: 160px; right: 30px; margin: auto;
+    width: 130px; height: 50px;
+    }
    
     
 
@@ -494,6 +511,23 @@ transition-timing-function:easeout; }
 
 
     </style>
+    <script type="text/javascript">
+
+    
+        
+        function popupOpen(){
+        
+            var popUrl = "login.html";	//팝업창에 출력될 페이지 URL
+        
+            var popOption = "width=800, height=560, resizable=no, scrollbars=no, status=no;";    
+        
+                window.open(popUrl,"",popOption);
+        
+            }
+        
+        
+        
+        </script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
     <link href="https://apis.map.daum.net/favicon.ico" rel="shortcut icon"> 
     <!-- <link rel="stylesheet" type="text/css" href="https://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css"> -->
@@ -518,8 +552,8 @@ transition-timing-function:easeout; }
                     <a href="index.html" class="com_img logo"><img src="https://ic.elijahhospital.com/storage/app/public/theme/theme/aed_hospital@aed_theme.1/08/8d/logo_image" alt="logo"></a>
                     <ul class="top">
                         <li><a href="">원격</a></li>
-                        <li><a href="">로그인</a></li>
-                        <li><a href="">회원가입</a></li>
+                        <li><a href="javascript:popupOpen();">로그인</a></li>
+                        <li><a href="newmem.html">회원가입</a></li>
                     </ul>
                 </nav>
             </div>
@@ -703,185 +737,13 @@ transition-timing-function:easeout; }
             </div>
         </header>
         <main class="content">
-            <div class="main_vs">
-                <ul class="ban_box">
-                    <li class="item1">
-                        <a href=""><img src="https://ic.elijahhospital.com/storage/app/public/theme/theme/aed_hospital@aed_theme.1/1b/c5/slide0_1" alt=""></a>
-                    </li>
-                    <li class="item2">
-                        <a href=""><img src="https://ic.elijahhospital.com/storage/app/public/theme/theme/aed_hospital@aed_theme.1/51/62/slide1_1" alt=""></a>
-                    </li>
-                    <li class="item3">
-                        <a href=""><img src="https://ic.elijahhospital.com/storage/app/public/theme/theme/aed_hospital@aed_theme.1/ac/a1/slide2_1" alt=""></a>
-                    </li>
-                    <li class="item4">
-                        <a href=""><img src="https://ic.elijahhospital.com/storage/app/public/theme/theme/aed_hospital@aed_theme.1/c7/22/slide3_1" alt=""></a>
-                    </li>
-                </ul>
-                <div class="lrbtn_box">
-                    <button class="vs_btn left"></button>
-                    <button class="vs_btn right"></button>
-                </div>
-                <ul class="numbtn_box">
-                    <li><button class="vs_btn on"></button></li>
-                    <li><button class="vs_btn"></button></li>
-                    <li><button class="vs_btn"></button></li>
-                    <li><button class="vs_btn"></button></li>
-                    <li><button class="vs_btn stop"></button></li>
-                </ul>
-            </div>
-            <div class="con_wrap">
-                <section class="page" id="page1">
-                    <div class="page_wrap">
-                        <ul class="row">
-                            <li class="col3 whtxt c008ace txt_left">
-                                <h3 class="grd_tit">외래진료 간편예약</h3>
-            
-                                <p class="grd_com">빠르고 쉽게 진료예약을
-                                    하실 수 있습니다.</p>
-                                    <input type="tel" id="user" name="user" maxlength="11" placeholder="010-0000-0000"  title= "핸드폰번호" >
-                                    <input type="submit" value="예약신청" id="call">
-                                <p id="re_de_bot">
-                                    전화번호를 입력해주시면 콜센터에서 예약 도움을 위해 연락드리겠습니다.
-                                </p>    
-                            </li>
-                            <li class="col3 whtxt c2763ba txt_left">
-                                <h3 class="grd_tit">온라인 회원예약</h3>
-                                <input type="button" value="예약신청" id="call2">
-                                <br>
-                                <br>
-                                <h3 class="grd_tit">건강검진 빠른예약</h3>
-                                <input type="tel" id="user3" name="user3" maxlength="11" placeholder="010-0000-0000"  title= "핸드폰번호" >
-                                    <input type="submit" value="예약신청" id="call3">
+        <div class="wrap">
+            <h4>모바일회원가입</h3>
+            <img src="./img/mobileimg.png" alt="">
+            <input type="button" class="new" value="회원가입">
 
-                            </li>
-                            <li class="col3 whtxt c2ca48f txt_left">
-                                
-                                    <h3 class="doctor_tit">의료진 찾기</h3>
-                                    <p class="doctor_com"></p>
-                                    <form action="" id="doctor_find">
-                                        <input type="text" name="doctor_name" id="doctor_name" placeholder="의료진/질병명 검색하기" class="doctor_keyword">
-                                        <input type="submit" value="검색" class="doctor_find_btn">
-                                    </form>
-                                
-                            </li>
-                            <li class="col3">
-                                <input type="radio" name="log_ra" id="log_ra1" class="log_ra" checked>
-                                <input type="radio" name="log_ra" id="log_ra2" class="log_ra">
-                                
-                                
-                                <span class="log_lb_box1">
-                                    <label for="log_ra1" class="log_lb">로그인</label>
-                                </span>
-                                <span class="log_lb_box2">
-                                    <label for="log_ra2" class="log_lb">비회원로그인</label>
-             
-                                </span>
-                                
-                                <form action="" id="login1" class="login">
-                                    <input type="text" name="m_id" placeholder="아이디/진찰권 번호" class="login_input">
-                                    <input type="password" name="m_pw" placeholder="비밀번호" class="login_input">
-                                    <p class="log_link">
-                                        <a href="newmem.html">회원가입</a>
-                                        <a href="se_id.html">아이디/비밀번호 찾기</a>
-                                    </p>
-                                    <input type="submit" value="로그인" class="login_btn c2763ba">
-                                </form>
-                                
-                                <form action="" id="login2" class="login">
-                                    <div class="frm_row">
-                                        <input type="text" name="name" placeholder="이름" class="login_input2">
-                                        <input type="text" name="num" placeholder="진찰권 번호" class="login_input2">
-                                    </div>
-                                    <div class="frm_row">
-                                        <input type="text" name="tel" placeholder="휴대폰번호" class="login_input3">
-                                        
-                                    </div>
-                                    <div class="frm_row">
-                
-                                        <input type="checkbox" name="info_ck" id="info_ck" class="frm_ck">
-                                        <label for="info_ck">정보동의</label>
-                                    </div>
-                                    
-                                    <p class="log_link">
-                                        <a href="">회원가입</a>
-                                        <a href="">아이디/비밀번호 찾기</a>
-                                    </p>
-                                    <input type="button" value="로그인" class="login_btn c2763ba">
-                                </form>
-                            </li>
-                        </ul>
-                     
-                        <ul class="row">
-                           
-                            <li class="col6 cffffff">
-                                <input type="radio" name="news_ra" id="new_ra1" class="new_ra" checked>
-                                <input type="radio" name="news_ra" id="new_ra2" class="new_ra">
-                          
-                               
-                               
-                                        <label for="new_ra1" class="new_ra_btn" id="new_la1">병원소식</label>
-                                       
-                                        
-                                        <label for="new_ra2" class="new_ra_btn" id="new_la2">언론보도</label>
-                                
-                                        <div class="bot_tab_wrap" id="btw1">
-                                        <ul>
-                                            <li><a href="event_hos">365일 진료하는 이천엘리야병원</a></li>
-                                            <li><a href="event_hos">코로나19 걱정없는 국민안심병원 선정!</a></li>
-                                            <li><a href="event_hos">질병관리센터 검사결과 코로나19 음성소식을 알려드립니다.</a></li>
-                                
-
-                                        </ul>
-                                         </div>
-                                        
-                                        
-                                        <div class="bot_tab_wrap" id="btw2">
-                                            <ul>
-                                            <li><a href="news_hos.html">'사람 중심' 이천 엘리야병원, '국민안심병원' 지정</a></li>
-                                            <li><a href="news_hos.html">정부, 국민안심병원 174개 확대 지정…경기권 이천엘리야병원 선정!</a></li>
-                                            <li><a href="news_hos.html">'일사불란' 이천 엘리야병원의 안전대응 돋보여..코로나19 차단에 총력</a></li>
-                                            <li><a href="news_hos.html">이천 엘리야병원, 환자중심의 최고 의료기관으로 주목</a></li>
-                                            
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul >  
-                                <section class="page" id="page3">
-                                    <div class="page_wrap">
-                                        <h2 class="page_tit">오시는길</h2>
-                                        
-                                        
-                                        <div class="map_canvas">
-                                            <div id="maparea">
-  <!-- * 카카오맵 - 지도퍼가기 -->
-<!-- 1. 지도 노드 -->
-<div id="daumRoughmapContainer1591633182624" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-
-<!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-
-<!-- 3. 실행 스크립트 -->
-<script charset="UTF-8">
-	new daum.roughmap.Lander({
-		"timestamp" : "1591633182624",
-		"key" : "yphd",
-		"mapWidth" : "1100",
-		"mapHeight" : "560"
-	}).render();
-</script>
-</div>
-</div>
-</div>
-
-                               
-                
-                                
-                
-            </div>
+        </div>    
+        
         </main>
         <footer class="ftr">
           
