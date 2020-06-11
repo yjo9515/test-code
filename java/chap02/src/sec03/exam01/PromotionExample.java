@@ -8,7 +8,7 @@ public class PromotionExample {
 		int intValue = byteValue;
 		System.out.println("intValue : " + intValue);
 		
-		char charValue = '가';
+		char charValue = 'a';
 		intValue = charValue;
 		System.out.println("intValue : " + intValue);
 		

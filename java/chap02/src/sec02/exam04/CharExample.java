@@ -12,7 +12,7 @@ public class CharExample {
 		System.out.println(c2);
 		System.out.println(c3);
 		
-		char c4 = '가';
+		char c4 = 'a';
 		char c5 = 44032;
 		char c6 = '\uAC00';
 		
