@@ -11,7 +11,6 @@ public class While03 {
 		do {
 			System.out.println("실행"+i);
 			i++;
-			aaaa
 		} while(i<0);
 
 	}
