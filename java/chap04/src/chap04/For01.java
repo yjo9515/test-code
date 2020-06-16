@@ -5,21 +5,23 @@ public class For01 {
 
 	public static void main(String[] args) {
 		int sum=0;
-//		for(ÃÊ±â°ª; Á¶°Ç½Ä; Áõ°¨½Ä) {
-//			¹Ýº¹½ÇÇàÇÒ ¹®Àå;
+//		for(ì´ˆê¸°ê°’; ì¡°ê±´ì‹; ì¦ê°ì‹) {
+//			ë°˜ë³µì‹¤í–‰í•  ë¬¸ìž¥;
 //		}
-//		ÃÊ±â°ªºÎÅÍ Áõ°¨½Ä¿¡ µû¶ó °ªÀÌ º¯ÇÏ°í, Á¶°Ç½ÄÀÌ ¸¸Á·ÇÒ µ¿¾È¸¸ ½ÇÇà
+//		ì´ˆê¸°ê°’ë¶€í„° ì¦ê°ì‹ì— ë”°ë¼ ê°’ì´ ë³€í•˜ê³ , ì¡°ê±´ì‹ì´ ë§Œì¡±í•  ë™ì•ˆë§Œ ì‹¤í–‰
 		
 		
 		for(int i=1; i<100; i++) {
 			sum=sum+i;
 			
+			
+			
 		}
 		
 		System.out.println("sum="+sum);
-//		for (int i=0; i>=0; i+=2) {} => ¹«ÇÑ¹Ýº¹
-//		for(int i=0; i<0;i++) {} => ¹«½ÇÇà¹Ýº¹
-//		for(int i=100;i>0;i--) {} => ¿ªfor¹®
+//		for (int i=0; i>=0; i+=2) {} => ë¬´í•œë°˜ë³µ
+//		for(int i=0; i<0;i++) {} => ë¬´ì‹¤í–‰ë°˜ë³µ
+//		for(int i=100;i>0;i--) {} => ì—­forë¬¸
 		for(int i=1;i<=9;i++) {
 			System.out.println("2 X "+i+" = "+(2*i));
 			
@@ -28,7 +30,7 @@ public class For01 {
 	
 		int dan;
 		Scanner sc = new Scanner(System.in);
-		System.out.println("´ÜÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä [2-9] : ");
+		System.out.println("ë‹¨ì„ ìž…ë ¥í•´ì£¼ì„¸ìš” [2-9] : ");
 		dan = sc.nextInt();
 		for(int su=1;su<=9;su++) {
 			System.out.println(dan+"*"+su+"="+(dan*su));
