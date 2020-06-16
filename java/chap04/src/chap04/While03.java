@@ -3,15 +3,15 @@ package chap04;
 public class While03 {
 
 	public static void main(String[] args) {
-		//do~while~πÆ : √÷º“1»∏ ¿ÃªÛ Ω««‡ ∫∏¿Â
-		//do ( Ω««‡πÆ; ) while(¡∂∞«Ωƒ);
-		//for(int i=1;i<0;i++) {Ω««‡πÆ;} for(;;){} (π´«—)
-		//int i=1; while(i<0){ Ω««‡πÆ; i++; } while(true){} (π´«—)
+		//do~while~Î¨∏ : ÏµúÏÜå1Ìöå Ïù¥ÏÉÅ Ïã§Ìñâ Î≥¥Ïû•
+		//do ( Ïã§ÌñâÎ¨∏; ) while(Ï°∞Í±¥Ïãù);
+		//for(int i=1;i<0;i++) {Ïã§ÌñâÎ¨∏;} for(;;){} (Î¨¥Ìïú)
+		//int i=1; while(i<0){ Ïã§ÌñâÎ¨∏; i++; } while(true){} (Î¨¥Ìïú)
 		int i=1;
 		do {
-			System.out.println("Ω««‡"+i);
+			System.out.println("Ïã§Ìñâ"+i);
 			i++;
-			
+			aaaa
 		} while(i<0);
 
 	}
