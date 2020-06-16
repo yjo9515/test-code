@@ -3,14 +3,16 @@ package chap04;
 public class For02 {
 
 	public static void main(String[] args) {
-//		±¸±¸´Ü
+//		Â±Â¸Â±Â¸ì¦ê°ì—°ì‚°ì
 		for(int i=2;i<10;i++) {
-			System.out.println(i+"´Ü");
+			System.out.println(i+"Â´Ãœ");
 			for(int k=1;k<10;k++) {
 			System.out.println(i+"X"+k+"="+(i*k));
 			}
 			
 				
+			
+			
 			System.out.println("--------------------------------");
 			System.out.println();
 		}
