@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문/switch문</title>
+</head>
+<body>
+    <h3>문제1. 다음 중 웹 표준 언어가 아닌 것은?</h3>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JAVA</li>
+        <li>Javascript</li>
+    </ol>
+    <script>
+        // if문과 유사한 조건문으로 변수명이 가진 값이 여러 가지인 경우에
+        // 따라 분기가 달리 이루어진다.
+        // switch(변수형){
+        //    case 경우값1:
+        //    실행문1;
+        //    break; 
+        //    case 경우값2:
+        //    실행문2;
+        //    break;
+        //    ...
+        //    defult;
+        //        실행문n;
+        // }
+        var answer = 3; //답을 입력
+        switch(answer){
+            case 1:
+                msg="X";
+                break;
+            case 2:
+                msg="X";
+                break;
+            case 3:
+                msg="O";
+                break;
+            case 4:
+                msg="X";
+                break;
+            default:
+                msg="[1-4] 입력 요망"
+        }
+        document.write(msg);
+        
+    </script>
+
+
+    <script>
+        // if(조건식) {실행문1;} else {실행문2;}
+        // if(조건식1) {실행문1;} else if(조건식2) {실행문2}
+        // .... else { 실행문n;}
+    var pr2 = parseInt(prompt("문제2. 자바스크립트 변수의 형태가 아닌 것은? \n 1) 숫자형 \n 2) 독립형 \n 3) 객체형 \n 4) 논리형"));
+    if(pr2==2){
+        alert("정답입니다~");
+        document.write("O");
+
+    }else{
+        if(confirm("정답이 아닙니다. 다시 도전하시겠습니까?"))
+        {
+            pr2 = parseInt(prompt("문제2. 자바스크립트 변수의 형태가 아닌 것은? \n 1) 숫자형 \n 2) 독립형 \n 3) 객체형 \n 4) 논리형"));
+            if(pr2==2){
+                alert("정답입니다~~");
+                document.write("O");
+
+
+            }else{
+                alert("정답이 아닙니다");
+                document.write("X");
+
+            }
+        }
+          else{
+            alert("정답이 아닙니다");
+            document.write("X");
+            }
+        
+        
+    }
+    </script>
+    
+
+    
+</body>
+</html>

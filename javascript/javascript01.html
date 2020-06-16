@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>변수의 타입</title>
+</head>
+<body>
+    <script>
+        // 변수명 = 기억장소명
+        // 선언시 : var 변수명;
+        // 초기값 부여 : 변수명 = 값;
+        // 선언과 초기값 부여 : var 변수명 = 값;
+        // 초기값 부여시 변수의 형태가 결정됨
+        // 자바: 변수형 변수명
+        var num = 5; //숫자 타입
+        var str = '강아지'; //문자 타입
+        var bool = true; //논리 타입
+        var arr = ("엄준식","김찬호","박종우"); //배열 타입
+        //          arr[0]  arr[1]    arr[2]
+        var obj = {name : "이재석", age:48, jum:56}; //객체 타입
+        //             obj.name    obj.age  obj.jum
+        var _who_am_i;
+        var $what_your_name;
+        var whatYourName;
+        document.write(typeof num+"<br>"); //body와 body사이 
+        document.write(typeof str+"<br>");
+        document.write(typeof bool+"<br>");
+        document.write(typeof arr+"<br>");
+        document.write(typeof obj+"<br>");
+        document.write(typeof _who_am_i+"<br>");
+        
+        
+
+    </script>
+</body>
+</html>

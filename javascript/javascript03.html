@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <script>
+        // function 함수명([매개변수1, 매개변수2])(
+        // 실행문;
+        // [return 반환값 또는 변수]
+        // )
+        // 모든 함수는 정의부, 호출부가 반드시 필요하며,
+        // 필요에 따라 매개값을 저장할 수 있는 매개변수와
+        // 반환문인 return을 사용할 수 있다.
+        var data = 0;
+        function fnc1(){ //기본함수
+            alert("첫 번째 함수입니다.");
+
+        }
+        fnc1();
+        function fnc2(x){  //x는 매개변수
+            document.write(x+"의 제곱 : "+(x*x)+"<br>");
+        }
+        fnc2(25);
+        function fnc3(x,y){    //x,y는 매개변수
+            return (x*y)/(x+y);
+        }
+        document.write("결과값 : "+fnc3(10,25)+"<br>");
+
+        var fnc4 = function(){
+            document.write("<h1>가나다</h1>");
+        }
+        fnc4();
+
+        var fnc5 = function(x){
+            document.write("당신의 나이는 "+x+"세 입니다.");
+        }
+        fnc5(prompt("당신의 나이는?"));
+        //var 함수명 = function([매개변수1, 매개변수2]){
+        //    실행문;
+        //    [return 전달값 또는 식]
+        // }
+        var result=0;   //전역변수
+        function sum(a,b){
+            var result = a + b; //지역변수
+            data = a + b;   //전역변수
+            return result;
+        }
+       sum(20,50);
+       document.write(result+"<br>");   //전역변수 result의 결과
+       document.write(sum(20,50)+"<br>");   //리턴된 결과를 출력
+       document.write(data+"<br>");     //전역변수 data의 결과
+    
+        function add(a,b,callback){
+            //콜백처리 : 자기자신의 함수를 다시 호출
+            var res = a+b;
+            callback();
+            return res;
+        }
+        var r = add(10, 20, function(){
+
+            alert("a와 b를 더한 결과값입니다.");
+
+        });
+        document.write(r+"<br>");
+    
+    
+    </script>
+</body>
+</html>
