@@ -22,6 +22,8 @@ public class Ref03 {
 		System.out.println("arr3의 "+n+"번째 값 : "+su);
 			n++;
 		
+			
+		
 		}
 		}
 	}
