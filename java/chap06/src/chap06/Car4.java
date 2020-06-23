@@ -1,6 +1,6 @@
 package chap06;
 
-public class Car4 {
+public class Car4 {//정적 클래스 : 인스턴스를 만들지 않는다
 	
 	static String company = "현대자동차"; // 정적변수
 	static int speed = 0;
