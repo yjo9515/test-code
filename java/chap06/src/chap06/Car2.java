@@ -22,7 +22,7 @@ public class Car2{
 	Car2(String company,String model){
 		this.company = "없음";
 		this.model = "없음";
-		this.color = "흰식";
+		this.color = "흰색";
 	}
 	
 	public static void main(String[] args) {

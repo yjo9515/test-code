@@ -15,13 +15,17 @@ public class Ref02 {
 		int[] num = {1,2,3}; //선언과 동시에 초기값 부여
 		int num2 = add(new int[] {10,20,30} ); //선언과 동시에 초기값 부여
 			int sum = 0;
+	}
+
+			
 			public static int add(int[] num) { //add 함수 선언 
+				int sum = 0; int[] num2 = {10, 20};
 			for(int i=0; i<3; i++) {
 				sum+=num2[i];
 			}
 			return sum;
-		}
+			}
 
-	}
-
+	
 }
+
