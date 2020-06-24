@@ -6,7 +6,11 @@ public class Member {
 	String id = "아이디";
 	String password = "패스워드";
 	int age;
-	
+	Member(){
+		
+		
+		this("홍길동","아이디없음");
+	}
 	Member(String name, String id){
 		
 		this.name = name;
