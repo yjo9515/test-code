@@ -10,3 +10,9 @@
 /Member.class
 /MemberService.class
 /Printer.class
+/Car.class
+/Car$Engine.class
+/Car$Tire.class
+/NestedClassExample.class
+/Vehicle.class
+/Anonymous.class
