@@ -23,14 +23,8 @@ public class ByteToStringEx1 {
 		System.out.println(readByteNo);
 		String st3 = new String(bts1, 0, readByteNo-2);	//2바이트 공백으로인해 글자수에서 2를빼야함
 		System.out.println(st3);
-		
-
+	
 		}
-		
-		
-		
-		
-		
 		
 	}
 
