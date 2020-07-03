@@ -20,4 +20,7 @@
 <fullyQualifiedTypeName name="chap12_8.AutoSaveThread"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="javax.swing.Box"/>
+<fullyQualifiedTypeName name="chap13.Car"/>
+<fullyQualifiedTypeName name="chap13.Course"/>
 </qualifiedTypeNameHistroy>
