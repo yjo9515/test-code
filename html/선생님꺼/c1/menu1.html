@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴바</title>
+    <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; }
+    ul { list-style: none;}
+    a { text-decoration: none; }
+    #page1 { width: 960px; height: 40px; position:relative; margin:0 auto; }
+    #gnb { width: 960px; margin: 20px auto; height: 270px; }
+    #gnb .dp1 { float:left; width: 240px; position:relative; line-height:40px; }
+    #gnb .dp1 > a { display:block; text-align:center; color:#333;
+    font-size:24px; line-height: 40px; }
+    #gnb .dp1:hover > a { background-color:deeppink; color:#fff; }
+    .sub { display:none; position:absolute; top: 40px; left:0; z-index:9999; }
+
+    /* 서브메뉴 각 각 열기  */
+    #gnb .dp1:hover .sub { display:block; }
+
+    /* 서브메뉴 한 꺼번에 모두 열기 */
+    /* #gnb:hover .dp1 .sub { display:block; }  */
+
+    .sub li a { display:block; text-align:center; line-height: 32px; 
+    font-size:16px; color:#333; }
+    .sub li a:hover { text-decoration:underline;}
+    </style>
+</head>
+<body>
+    <div class="page" id="page1">
+        <nav id="gnb">
+            <ul class="menu">
+                <li class="dp1">
+                    <a href="">메인1</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴11</a></li>
+                        <li><a href="">서브메뉴12</a></li>
+                        <li><a href="">서브메뉴13</a></li>
+                        <li><a href="">서브메뉴14</a></li>
+                        <li><a href="">서브메뉴15</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="">메인2</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴21</a></li>
+                        <li><a href="">서브메뉴22</a></li>
+                        <li><a href="">서브메뉴23</a></li>
+                        <li><a href="">서브메뉴24</a></li>
+                        <li><a href="">서브메뉴25</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="">메인3</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴31</a></li>
+                        <li><a href="">서브메뉴32</a></li>
+                        <li><a href="">서브메뉴33</a></li>
+                        <li><a href="">서브메뉴34</a></li>
+                        <li><a href="">서브메뉴35</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="">메인4</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴41</a></li>
+                        <li><a href="">서브메뉴42</a></li>
+                        <li><a href="">서브메뉴43</a></li>
+                        <li><a href="">서브메뉴44</a></li>
+                        <li><a href="">서브메뉴45</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>   
