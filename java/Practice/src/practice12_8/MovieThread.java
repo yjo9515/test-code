@@ -1,4 +1,4 @@
-package parctice12_8;
+package practice12_8;
 
 public class MovieThread extends Thread {
 
