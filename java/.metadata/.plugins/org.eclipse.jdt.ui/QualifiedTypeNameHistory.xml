@@ -23,4 +23,17 @@
 <fullyQualifiedTypeName name="javax.swing.Box"/>
 <fullyQualifiedTypeName name="chap13.Car"/>
 <fullyQualifiedTypeName name="chap13.Course"/>
+<fullyQualifiedTypeName name="chap14_2.UsingThis.Inner"/>
+<fullyQualifiedTypeName name="java.util.function.ObjIntConsumer"/>
+<fullyQualifiedTypeName name="java.util.function.IntConsumer"/>
+<fullyQualifiedTypeName name="java.util.function.Function"/>
+<fullyQualifiedTypeName name="java.util.function.IntBinaryOperator"/>
+<fullyQualifiedTypeName name="java.util.function.Predicate"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.util.Vector"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.net.URLDecoder"/>
 </qualifiedTypeNameHistroy>
