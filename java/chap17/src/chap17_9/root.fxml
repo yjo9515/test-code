@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="chap17_9.RoofController"
+>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <CheckBox fx:id="chk1" selected="true" mnemonicParsing="false" text="안경" onAction="#handleChkAction" />
+                  <CheckBox fx:id="chk2" mnemonicParsing="false" text="모자" onAction="#handleChkAction" />
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/geek-glasses.gif" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="200.0" />
+            <VBox prefHeight="200.0" prefWidth="100.0">
+           
+               <children>
+                  <RadioButton mnemonicParsing="false" fx:id="rad1" selected="true" text="BubbleChart" userData="BubbleChart"  >
+                   <toggleGroup>
+                   <ToggleGroup fx:id="group"/>
+                   </toggleGroup>
+                   </RadioButton>
+                  <RadioButton mnemonicParsing="false" fx:id="rad2" text="BarChart" userData="BarChart" toggleGroup="$group" />
+                  <RadioButton mnemonicParsing="false" fx:id="rad3" text="AreaChart" userData="AreaChart" toggleGroup="$group" />
+               </children>
+            </VBox>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/BarChart.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" BorderPane.alignment="CENTER" fx:id="btnExit" onAction="#handleBtnExitAction">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </bottom>
+</BorderPane>
