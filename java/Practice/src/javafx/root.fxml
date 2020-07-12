@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <VBox prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="30.0" prefWidth="600.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="파일(F)">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="새로 만들기(N)" />
+                        <MenuItem mnemonicParsing="false" text="새 창(W)" />
+                        <MenuItem mnemonicParsing="false" text="열기(O)" />
+                        <MenuItem mnemonicParsing="false" text="저장(S)" />
+                        <MenuItem mnemonicParsing="false" text="다른 이름으로 저장(A)" />
+                        <MenuItem mnemonicParsing="false" text="페이지 설정(U)" />
+                        <MenuItem mnemonicParsing="false" text="인쇄(P)" />
+                        <MenuItem mnemonicParsing="false" text="끝내기(X)" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="편집(E)">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="실행취소(U)" />
+                      <MenuItem mnemonicParsing="false" text="잘라내기(T)" />
+                        <MenuItem mnemonicParsing="false" text="복사(C)" />
+                        <MenuItem mnemonicParsing="false" text="붙여넣기(P)" />
+                        <MenuItem mnemonicParsing="false" text="삭제(L)" />
+                        <MenuItem mnemonicParsing="false" text="Bing으로 검색(S)" />
+                        <MenuItem mnemonicParsing="false" text="찾기(F))" />
+                        <MenuItem mnemonicParsing="false" text="다음 찾기(N)" />
+                         <MenuItem mnemonicParsing="false" text="이전 찾기(V)" />
+                        <MenuItem mnemonicParsing="false" text="바꾸기(R)" />
+                        <MenuItem mnemonicParsing="false" text="이동(G))" />
+                        <MenuItem mnemonicParsing="false" text="모두 선택(A)" />
+                        <MenuItem mnemonicParsing="false" text="시간/날짜(D)" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="서식(O)">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="자동 줄 바꿈(W)" />
+                    <MenuItem mnemonicParsing="false" text="글꼴(F)" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="보기(V)">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="확대하기/축소하기" />
+                      <MenuItem mnemonicParsing="false" text="상태 표시줄(S)" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="도움말(H)">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="도움말 보기(H)" />
+                      <MenuItem mnemonicParsing="false" text="피드백 보내기(F)" />
+                      <MenuItem mnemonicParsing="false" text="메모장 정보(A)" />
+                    </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <TextArea prefHeight="74.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

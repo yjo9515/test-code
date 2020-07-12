@@ -10,21 +10,22 @@ public class Car2{
 //	어떠한 입력값이 들어오더라도 처리가 가능하게 해야하기때문	
 		
 		
-		this.company = "없음";
-		this.model = "없음";
-		this.color = "흰식";
+		
 	}
 	Car2(String company){
 		this.company = "없음";
-		this.model = "없음";
-		this.color = "흰색";
+		
 	}
 	Car2(String company,String model){
 		this.company = "없음";
-		this.model = "없음";
+		this.model = "아반떼";
+		
+	}
+	Car2(String company,String model, String color){
+		this.company="없음";
+		this.model="아반떼";
 		this.color = "흰색";
 	}
-	
 	public static void main(String[] args) {
 
 		Car2 myCar = new Car2();
