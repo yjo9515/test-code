@@ -41,9 +41,7 @@
 <fullyQualifiedTypeName name="chap16_11.Student.Sex"/>
 <fullyQualifiedTypeName name="javafx.scene.Parent"/>
 <fullyQualifiedTypeName name="javafx.fxml.FXMLLoader"/>
-<fullyQualifiedTypeName name="javafx.scene.Scene"/>
 <fullyQualifiedTypeName name="javafx.stage.Stage"/>
-<fullyQualifiedTypeName name="javafx.application.Application"/>
 <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
 <fullyQualifiedTypeName name="javafx.beans.binding.Binding"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
@@ -57,4 +55,7 @@
 <fullyQualifiedTypeName name="javafx.scene.image.Image"/>
 <fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.BorderPane"/>
+<fullyQualifiedTypeName name="javafx.application.Application"/>
+<fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
+<fullyQualifiedTypeName name="javafx.scene.Scene"/>
 </qualifiedTypeNameHistroy>

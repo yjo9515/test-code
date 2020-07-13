@@ -67,4 +67,10 @@
    <center>
       <TextArea prefHeight="74.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
    </center>
+   <bottom>
+      <ScrollBar BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <ScrollBar orientation="VERTICAL" BorderPane.alignment="CENTER" />
+   </right>
 </BorderPane>
