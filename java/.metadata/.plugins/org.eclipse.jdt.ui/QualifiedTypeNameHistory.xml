@@ -58,4 +58,6 @@
 <fullyQualifiedTypeName name="javafx.application.Application"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
 <fullyQualifiedTypeName name="javafx.scene.Scene"/>
+<fullyQualifiedTypeName name="chap15_1.Board"/>
+<fullyQualifiedTypeName name="com.test.kim.bulidTest.YongbuildTest"/>
 </qualifiedTypeNameHistroy>
