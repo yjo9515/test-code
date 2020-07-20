@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+ fx:controller="javafx.application">
+   
+  <!--  
+   <fx:script>
+   function doAction(event){
+   var str = field1.getText();
+   str = "당신이 쓴 글은 "+ str+"입니다.";
+   label1.setText(str);
+   }
+   
+   </fx:script>
+   -->
+   
+   <top>
+      <FlowPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="9.0" left="7.0" right="8.0" top="5.0" />
+         </padding>
+         <children>
+            <Label fx:id="label1" text="javaFx~" />
+            <TextField />
+            <Button mnemonicParsing="false" text="확인" />
+         </children>
+      </FlowPane>
+   </top>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <RadioButton mnemonicParsing="false" text="남자" />
+            <RadioButton mnemonicParsing="false" text="여자" />
+            <Label text="선택해주세요" />
+            <Button onAction="doAction(event);" text="Click" />
+            <Button fx:di="btn1" onAction="#doAction" text="Click" />
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <ComboBox prefWidth="150.0" BorderPane.alignment="CENTER" />
+   </center>
+   <right>
+      <Slider BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>
