@@ -3,8 +3,10 @@ package application;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +14,7 @@ import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 
 import application.model.*;
+import application.view.PersonEditDialogController;
 import application.view.PersonOverviewController;
 
 public class Main extends Application {
@@ -66,16 +69,47 @@ public class Main extends Application {
 			
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/App.fxml"));
-			HBox personOverview = (HBox) loader.load();
+			AnchorPane personOverview = (AnchorPane) loader.load();
 			rootLayout.setCenter(personOverview);
-//			PersonOverviewController controller = loader.getController();
-//			controller.setMainApp(this);
+			PersonOverviewController controller = loader.getController();
+			controller.setMainApp(this);
 			
 		}catch(IOException e) {
 			
 			e.printStackTrace();
 			
 		}
+		
+	}
+	public boolean showPersonEditDialog(Person person) {
+		try {
+			//로더 설정
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Main.class.getResource("view/PersonEditDialog.fxml"));
+			AnchorPane page = (AnchorPane) loader.load();
+			//모달 다이얼로그(사용자 대화상자) 만들기
+			Stage dialogStage = new Stage();
+			dialogStage.setTitle("주소록 편집");
+			dialogStage.initModality(Modality.WINDOW_MODAL);
+			dialogStage.initOwner(primaryStage);
+			Scene scene = new Scene(page);
+			dialogStage.setScene(scene);
+
+			// 편집하거나 새롭게 입력된 person 정보를 컨트롤러에 연결
+			PersonEditDialogController controller = loader.getController();
+			controller.setDialogStage(dialogStage);
+			controller.setPerson(person);
+			
+			//대화상자 대기
+			dialogStage.showAndWait();
+			return controller.isOkClicked();
+			
+		} catch(Exception e)
+		{
+			e.printStackTrace();
+			return false;
+		}
+		 
 		
 	}
 	public static void main(String[] args) {

@@ -3,7 +3,9 @@ package application.view;
 import application.model.Person;
 import application.util.DateUtil;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
+import javafx.scene.control.Alert.AlertType;
 import javafx.stage.Stage;
 
 public class PersonEditDialogController {
@@ -31,7 +33,7 @@ public class PersonEditDialogController {
 		firstNameField.setText(person.getFirstName());
 		lastNameField.setText(person.getLastName());
 		cityField.setText(person.getCity());
-		birthdayField.setText(DateUtil.format(person.getBirth()));
+		birthdayField.setText(DateUtil.format(person.getBirthday()));
 		birthdayField.setPromptText("dd.mm.yyyy");
 		
 	}
@@ -46,7 +48,7 @@ public class PersonEditDialogController {
 			person.setFirstName(firstNameField.getText());
 			person.setLastName(lastNameField.getText());
 			person.setCity(firstNameField.getText());
-			person.setBirth(DateUtil.parse(firstNameField.getText()));
+			person.setBirthday(DateUtil.parse(firstNameField.getText()));
 			
 			okClicked = true;
 			dialogStage.close();
@@ -74,6 +76,13 @@ public class PersonEditDialogController {
 			errorMessage += "생년월일을 입력하지 않았습니다.";
 		}
 		
+		if(errorMessage.length() == 0) {
+			return true;
+		}else {
+			Alert alert = new Alert(AlertType.ERROR);
+			alert.initOwner(dialogStage);
+			return false;
+		}
 		
 	}
 	

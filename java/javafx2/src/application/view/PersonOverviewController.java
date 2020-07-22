@@ -17,15 +17,23 @@ public class PersonOverviewController {
 	@FXML private Label firstNameLabel;
 	@FXML private Label lastNameLabel;
 	@FXML private Label streetLabel;
+	@FXML private Label postalCodeLabel;
 	@FXML private Label cityLabel;
-	@FXML private Label birthLabel;
+	@FXML private Label birthdayLabel;
 	
 	private Main mainApp;
 	public PersonOverviewController() {}
 	@FXML
-	private void initialize() {	//테이블뷰의 각셀에 firstName과 lastName 바운드 시키기
+	private void initialize() {	//테이블뷰의 각셀에 firstName과 lastName 바운드 시키기,연락처 테이블의 두 열을 초기화
 		firstNameColumn.setCellValueFactory(cellData -> cellData.getValue().firstNameProperty());
 		lastNameColumn.setCellValueFactory(cellData -> cellData.getValue().lastNameProperty());	
+		 // 연락처 정보를 지운다.
+	    showPersonDetails(null);
+
+	    // 선택을 감지하고 그 때마다 연락처의 자세한 정보를 보여준다.
+	    personTable.getSelectionModel().selectedItemProperty().addListener(
+	            (observable, oldValue, newValue) -> showPersonDetails(newValue));
+	
 	}
 	
 	
@@ -79,13 +87,14 @@ public class PersonOverviewController {
 			lastNameLabel.setText(person.getLastName());
 			streetLabel.setText(person.getStreet());
 			cityLabel.setText(person.getCity());
-			birthLabel.setText(DateUtil.format(person.getBirth()));
+			postalCodeLabel.setText(Integer.toString(person.getPostalCode()));
+			birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 		}else {
 			firstNameLabel.setText("");
 			lastNameLabel.setText("");
 			streetLabel.setText("");
 			cityLabel.setText("");
-			birthLabel.setText("");
+			birthdayLabel.setText("");
 		}
 	}
 	private void showPersonDetails(Person person) {
@@ -95,13 +104,13 @@ public class PersonOverviewController {
 				lastNameLabel.setText(person.getLastName());
 				streetLabel.setText(person.getStreet());
 				cityLabel.setText(person.getCity());
-				birthLabel.setText(DateUtil.format(person.getBirth()));
+				birthdayLabel.setText(DateUtil.format(person.getBirthday()));
 			}else {
 				firstNameLabel.setText("");
 				lastNameLabel.setText("");
 				streetLabel.setText("");
 				cityLabel.setText("");
-				birthLabel.setText("");
+				birthdayLabel.setText("");
 			}
 			
 			
