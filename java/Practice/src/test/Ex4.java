@@ -64,7 +64,7 @@ public class Ex4 {
 		System.out.println();
 		int sum4 =0;
 		int t = 0;
-		while(t<=100) {
+		while(t<100) {
 			
 			t+=2;
 			sum4+=t;
