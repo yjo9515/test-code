@@ -4,10 +4,10 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.input.KeyCodeCombination?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="Controller.java"
->
+fx:controller="javafx.Controller">
    <top>
       <VBox prefHeight="30.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
@@ -15,14 +15,47 @@ fx:controller="Controller.java"
               <menus>
                 <Menu mnemonicParsing="false" text="파일(F)">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="새로 만들기(N)" />
-                        <MenuItem mnemonicParsing="false" text="새 창(W)" />
-                        <MenuItem mnemonicParsing="false" text="열기(O)" />
-                        <MenuItem mnemonicParsing="false" text="저장(S)" />
-                        <MenuItem mnemonicParsing="false" text="다른 이름으로 저장(A)" />
-                        <MenuItem mnemonicParsing="false" text="페이지 설정(U)" />
-                        <MenuItem mnemonicParsing="false" text="인쇄(P)" />
-                        <MenuItem mnemonicParsing="false" text="끝내기(X)" />
+                    <MenuItem mnemonicParsing="false" text="새로 만들기(N)" onAction="#newview1"  >
+	                    <accelerator>
+	                    	<KeyCodeCombination control="DOWN" code="N" meta="UP" alt="UP" shift="UP" shortcut="UP" />                  
+	                    </accelerator>
+                    </MenuItem>
+					<MenuItem mnemonicParsing="false" text="새 창(W)" onAction="#newview2" >
+                          <accelerator>
+                    		<KeyCodeCombination control="DOWN" shift="UP" code="W" meta="UP" alt="UP" shortcut="UP" />
+                          </accelerator>
+                    </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="열기(O)" onAction="#open">
+                          <accelerator>
+                    <KeyCodeCombination control="DOWN" code="O" meta="UP" alt="UP" shift="UP" shortcut="UP" />
+                    	  </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="저장(S)" onAction="#save">
+                          <accelerator>
+                    <KeyCodeCombination control="DOWN" code="S" meta="UP" alt="UP" shift="UP" shortcut="UP" /> 
+                   		  </accelerator>
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="다른 이름으로 저장(A)" onAction="#othersave" >
+                          <accelerator>
+                  				 <KeyCodeCombination control="DOWN" shift="DOWN" code="S" meta="UP" alt="UP" shortcut="UP" />                 
+                   		  </accelerator>
+                                    </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="페이지 설정(U)" onAction="#option" >
+                          <accelerator>
+                   			 <KeyCodeCombination code="U" meta="UP" alt="UP" shift="UP" control="UP" shortcut="UP" />                   
+                  		  </accelerator>               
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="인쇄(P)" onAction="#print">
+                          <accelerator>
+                   				 <KeyCodeCombination control="DOWN" code="P" meta="UP" alt="UP" shift="UP" shortcut="UP" />
+                   		  </accelerator>
+                    
+                        </MenuItem>
+                        <MenuItem mnemonicParsing="false" text="끝내기(X)" onAction="#quit" >
+                          <accelerator>
+                   			 <KeyCodeCombination code="X" meta="UP" alt="UP" shift="UP" control="DOWN" shortcut="UP" />                   
+                  		  </accelerator>                
+                        </MenuItem>     
                   </items>
                 </Menu>
                 <Menu mnemonicParsing="false" text="편집(E)">
