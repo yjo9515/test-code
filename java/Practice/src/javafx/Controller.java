@@ -69,9 +69,7 @@ public class Controller implements Initializable {
 	}
 	@FXML
 	private void save () {
-//		Alert alert = new Alert(AlertType.CONFIRMATION);
-//		alert.setTitle("저장");
-//		alert.setContentText("저장하시겠습니까?");
+
 		//처음 저장하는지 여부 판단
 		try {//처음 저장시 showSaveDialog, 저장된 파일명 가져오기
 			File savfile = fileChooser.showSaveDialog(textarea.getScene().getWindow());

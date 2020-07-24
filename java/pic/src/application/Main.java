@@ -5,17 +5,17 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
+
+
 
 
 public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("view/Main.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("view/root.fxml"));;
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
-			primaryStage.setTitle("레플즈샵");
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

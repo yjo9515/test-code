@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="새로 만들기" />
+              <MenuItem mnemonicParsing="false" text="열기" />
+                  <MenuItem mnemonicParsing="false" text="저장" />
+                  <MenuItem mnemonicParsing="false" text="다른 이름으로 저장" />
+                  <MenuItem mnemonicParsing="false" text="인쇄" />
+                  <MenuItem mnemonicParsing="false" text="스캐너 또는 카메라" />
+                  <MenuItem mnemonicParsing="false" text="전자 메일로 보내기" />
+                  <MenuItem mnemonicParsing="false" text="바탕화면 배경으로 설정" />
+                  <MenuItem mnemonicParsing="false" text="속성" />
+                  <MenuItem mnemonicParsing="false" text="그림판 정보" />
+                  <MenuItem mnemonicParsing="false" text="끝내기" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ColorPicker layoutX="74.0" layoutY="55.0" />
+      <Label layoutX="357.0" layoutY="59.0" text="Label" />
+      <Slider layoutX="195.0" layoutY="60.0" />
+   </children>
+</AnchorPane>
