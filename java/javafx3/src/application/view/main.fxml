@@ -6,24 +6,25 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="application.Controller"
->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <MenuBar layoutY="2.0">
         <menus>
           <Menu mnemonicParsing="false" text="로그인">
             <items>
-              <MenuItem mnemonicParsing="false" text="로그인" onAction="#login" fx:id="btnLogin" />
-                  <MenuItem mnemonicParsing="false" text="회원가입" onAction="#newmem"  />
+              <MenuItem fx:id="btnLogin" mnemonicParsing="false" onAction="#login" text="로그인" />
+                  <MenuItem mnemonicParsing="false" onAction="#newmem" text="회원가입" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="주문" onAction="#order"/>
+            <Menu mnemonicParsing="false" text="주문">
+              <items>
+                <MenuItem mnemonicParsing="false" text="주문하기" onAction="#order" />
+              </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="커뮤니티">
             <items>
               <MenuItem mnemonicParsing="false" text="리뷰" />
-                  <MenuItem mnemonicParsing="false" text="리뷰작성" />
+                  <MenuItem mnemonicParsing="false" onAction="#community" text="리뷰작성" />
             </items>
           </Menu>
         </menus>
