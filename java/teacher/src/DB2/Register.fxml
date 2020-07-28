@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="login" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #eaeaea;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login_Register.DatabaseController">
+	<children>
+	  <TextField fx:id="name" layoutX="70.0" layoutY="108.0" promptText="userId" />
+	  <TextField fx:id="id" layoutX="70.0" layoutY="150.0" promptText="userPassword" />
+	  <PasswordField fx:id="pwd" layoutX="70.0" layoutY="195.0" promptText="userName" />
+	  <Button fx:id="membersBtn" layoutX="80.0" layoutY="246.0" onAction="#membersAction" text="OK" />
+	  <Button fx:id="cancelBtn" layoutX="173.0" layoutY="246.0" onAction="#cancelAction" text="cancel" />
+      <Label fx:id="lblStatus" layoutX="97.0" layoutY="46.0" text="Member" textFill="#d00707">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>	  
+	</children>
+</AnchorPane>

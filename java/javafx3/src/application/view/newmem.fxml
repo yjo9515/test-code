@@ -6,10 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller"
-
->
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="302.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
    <children>
       <GridPane layoutX="96.0" layoutY="98.0" prefHeight="102.0" prefWidth="329.0" vgap="20.0">
         <columnConstraints>
@@ -29,7 +26,7 @@
             <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
             <Label text="아이디" />
             <Label text="비밀번호" GridPane.rowIndex="1" />
-            <Label text="배송지" GridPane.rowIndex="2" />
+            <Label text="이름" GridPane.rowIndex="2" />
             <Label text="주민번호" GridPane.rowIndex="3" />
          </children>
       </GridPane>
