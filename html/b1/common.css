@@ -65,7 +65,8 @@
         
         }
         
-        .logo { left: 100px; position: absolute; top: 60px;}
+        .logo { left: 100px; position: absolute; top: 30px;}
+        .logo img {width: 270px; height: 60px;}
         #search_de {position: absolute; right: 100px; top: 60px;}
         input {
             -webkit-writing-mode: horizontal-tb ;
@@ -118,7 +119,7 @@
         #tab1:checked ~ #menu_click { display: block; 
         
          }
-        #menu_click { width: 1000px; height: 500px; background-color: #ef402e; margin: 50px auto; 
+        #menu_click { width: 805px; height: 400px; background-color: #ef402e; margin: 50px auto; 
         display: none; position: absolute; top:0; left: 130px; overflow: hidden ; z-index: 1000;
         
         }
@@ -126,7 +127,7 @@
         #skin_tab { display: none;}
         #other_tab { display: none;}
         
-        #skin_de { background-color: white; width: 994px; height: 415px;
+        #skin_de { background-color: white; width: 800px; height: 315px;
         display: none; position: absolute; top: 80px; left: 0px; z-index: 500;
         border: 3px solid gray;}
         #other_de { background-color: white; width: 994px; height: 415px;

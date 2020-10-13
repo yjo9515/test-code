@@ -13,7 +13,7 @@
 #event3 { position: relative; left: 60px; top: 30px;  margin: auto; z-index: 999; cursor: pointer;}
 .tit1{ padding: 10px; text-align: center; font-size: 30px; margin: auto;}
 .best_txt { margin: 0 auto; position: relative; width: 1200px; height: 60px;
-display: block;
+display: block; padding-top: 120px;
 }
 .best_txt ul { margin: 0 auto; border-top: 1px solid #e4eaed;}
 .best_txt ul li{ float: left; padding: 30px; padding-top: 0px; margin-left: 123px; }
